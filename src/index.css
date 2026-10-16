@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+/* ── ACCESSIBILITY SKIP LINK ── */
+.sr-skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 9999;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 2px solid #facc15;
+  transition: top 0.15s ease;
+}
+.sr-skip-link:focus {
+  top: 1rem;
+}
+
+/* ── HIGH VISIBILITY FOCUS RING ── */
+.high-visibility-focus *:focus-visible {
+  outline: 3px solid #facc15 !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* ── HYPER-LEGIBLE FONT STYLING ── */
+.hyper-legible-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Atkinson Hyperlegible", Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+  letter-spacing: 0.03em !important;
+  word-spacing: 0.05em !important;
+}
+
+/* ── HIGH CONTRAST THEMES (WCAG AAA+ FOR LOW VISION & PARTIAL BLINDNESS) ── */
+
+/* Theme: High Contrast Yellow on Black */
+.theme-high-contrast-yellow,
+.theme-high-contrast-yellow body {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+.theme-high-contrast-yellow div,
+.theme-high-contrast-yellow section,
+.theme-high-contrast-yellow article,
+.theme-high-contrast-yellow main,
+.theme-high-contrast-yellow header,
+.theme-high-contrast-yellow nav,
+.theme-high-contrast-yellow footer,
+.theme-high-contrast-yellow aside {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+.theme-high-contrast-yellow h1,
+.theme-high-contrast-yellow h2,
+.theme-high-contrast-yellow h3,
+.theme-high-contrast-yellow h4,
+.theme-high-contrast-yellow h5,
+.theme-high-contrast-yellow h6,
+.theme-high-contrast-yellow p,
+.theme-high-contrast-yellow span,
+.theme-high-contrast-yellow label,
+.theme-high-contrast-yellow li {
+  color: #ffff00 !important;
+}
+
+.theme-high-contrast-yellow a {
+  color: #00ffff !important;
+  text-decoration: underline !important;
+}
+
+.theme-high-contrast-yellow button {
+  background-color: #111111 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+.theme-high-contrast-yellow button:hover,
+.theme-high-contrast-yellow button:focus {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+}
+
+.theme-high-contrast-yellow input,
+.theme-high-contrast-yellow select,
+.theme-high-contrast-yellow textarea {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+}
+
+.theme-high-contrast-yellow input::placeholder {
+  color: #aaaa00 !important;
+}
+
+/* Theme: High Contrast White on Black */
+.theme-high-contrast-black,
+.theme-high-contrast-black body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.theme-high-contrast-black div,
+.theme-high-contrast-black section,
+.theme-high-contrast-black article,
+.theme-high-contrast-black main,
+.theme-high-contrast-black header,
+.theme-high-contrast-black nav,
+.theme-high-contrast-black footer {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.theme-high-contrast-black h1,
+.theme-high-contrast-black h2,
+.theme-high-contrast-black h3,
+.theme-high-contrast-black h4,
+.theme-high-contrast-black p,
+.theme-high-contrast-black span,
+.theme-high-contrast-black label {
+  color: #ffffff !important;
+}
+
+.theme-high-contrast-black a {
+  color: #38bdf8 !important;
+  text-decoration: underline !important;
+}
+
+.theme-high-contrast-black button {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+.theme-high-contrast-black button:hover,
+.theme-high-contrast-black button:focus {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-high-contrast-black input,
+.theme-high-contrast-black select,
+.theme-high-contrast-black textarea {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+/* Theme: High Contrast Black on Pure White */
+.theme-high-contrast-white,
+.theme-high-contrast-white body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.theme-high-contrast-white div,
+.theme-high-contrast-white section,
+.theme-high-contrast-white article,
+.theme-high-contrast-white main,
+.theme-high-contrast-white header,
+.theme-high-contrast-white nav,
+.theme-high-contrast-white footer {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.theme-high-contrast-white h1,
+.theme-high-contrast-white h2,
+.theme-high-contrast-white h3,
+.theme-high-contrast-white h4,
+.theme-high-contrast-white p,
+.theme-high-contrast-white span,
+.theme-high-contrast-white label {
+  color: #000000 !important;
+}
+
+.theme-high-contrast-white button {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+.theme-high-contrast-white button:hover,
+.theme-high-contrast-white button:focus {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.theme-high-contrast-white input,
+.theme-high-contrast-white select,
+.theme-high-contrast-white textarea {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+}
+
+/* ── ACCESSIBLE TOUCH TARGETS & RESPONSIVENESS FOR SMARTPHONES ── */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 640px) {
+  button,
+  [role="button"],
+  select,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="number"] {
+    min-height: 44px;
+  }
+
+  /* Prevent table clipping on small mobile viewports */
+  .table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+

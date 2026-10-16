@@ -1,0 +1,6 @@
+{
+  "name": "OmniSchool - School Management & Visa Billing System",
+  "description": "Secure school management system with end-to-end encryption, student attendance, gradebooks, faculty scheduling, automated parent alerts, Visa fee billing, subscriptions, and cross-platform Flutter mobile view.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
